@@ -13,9 +13,13 @@ public class TestBase {
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
     }
-    @Step("Делаем скриншот результата")
+
     @AfterEach
     void addAttachments(){
         Attach.screenshotAs("Result screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
     }
+
+
 }
