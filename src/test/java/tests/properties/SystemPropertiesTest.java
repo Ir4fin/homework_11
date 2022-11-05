@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class SystemPropertiesTest {
 
     @Test
-    @Tag("simplePropertyTest")
+    @Tag("properties")
     void simplePropertyTest() {
         String browserName = System.getProperty("browser_name", "firefox");
         String browserVersion = System.getProperty("browser_version", "101");
