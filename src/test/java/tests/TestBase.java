@@ -22,12 +22,13 @@ public class TestBase {
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", true);
         }
+        Configuration.baseUrl = "https://demoqa.com";
+        Configuration.browserCapabilities = capabilities;
 
         Configuration.browser = System.getProperty("browser_name", "chrome");
         Configuration.browserVersion = System.getProperty("browser_version", "100");
         Configuration.browserSize = System.getProperty("browser_size", "1920x1080");
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browserCapabilities = capabilities;
+
     }
 
     @AfterEach
