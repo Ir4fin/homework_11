@@ -55,6 +55,12 @@ task properties_test(type: Test) {
     }
 }
 
+task form_test(type: Test) {
+    useJUnitPlatform{
+        includeTags "form"
+    }
+}
+
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
