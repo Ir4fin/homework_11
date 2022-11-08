@@ -1,0 +1,4 @@
+5628181541:AAHURMwD5LcW5_ewkn9isBwKk88f6_DFY44
+302290044
+
+java "-DconfigFile=notifications/telegram.json" -jar notifications/allure-notifications-4.2.1.jar
